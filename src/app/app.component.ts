@@ -44,12 +44,12 @@ export class AppComponent {
 
   onSubmit(signupForm) {
     this.submitted = true;
-    this.user.username = this.signupForm.value.userData.username;
-    this.user.email = this.signupForm.value.userData.email;
-    this.user.secretQuestion = this.signupForm.value.secret;
-    this.user.answer = this.signupForm.value.questionAnswer;
-    this.user.gender = this.signupForm.value.gender;
+    this.user.username = signupForm.value.userData.username;
+    this.user.email = signupForm.value.userData.email;
+    this.user.secretQuestion = signupForm.value.secret;
+    this.user.answer = signupForm.value.questionAnswer;
+    this.user.gender = signupForm.value.gender;
 
-    this.signupForm.reset();
+    signupForm.reset();
   }
 }
